@@ -1,0 +1,35 @@
+name: kinofe-api-haskell
+version: 0.1.0
+category: Web
+author: Timur Manyanov
+maintainer: darkwebdev@gmail.com
+copyright: 2017 Timur Manyanov
+license: BSD3
+homepage: https://github.com/darkwebdev/kinofe-api-haskell#readme
+extra-source-files:
+- README.md
+
+dependencies:
+- aeson
+- aeson-compat
+- attoparsec
+- base >=4.7 && <5
+- base-compat
+- blaze-html
+- blaze-markup
+- bytestring
+- directory
+- http-media
+- lucid
+- mtl
+- servant
+- servant-server
+- string-conversions
+- time
+- wai
+- warp
+
+executables:
+  kinofe-api-haskell:
+    main: Main.hs
+    source-dirs: src
